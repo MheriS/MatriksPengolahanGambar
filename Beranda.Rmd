@@ -1,0 +1,19 @@
+---
+title: "Matriks Dalam Pengolahan Gambar"
+author: "Moh. Heri Susanto | UIN Maulana Malik Ibrahim Malang | Teknik Informatika | Dosen Pengampu: Prof. Dr. Suhartono, M.Kom"
+date: 15 Maret 2021
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 3
+    theme: united
+    highlight: tango
+    number_sections: true
+---
+
+Assalamu'alaikum Wr.Wb.
+Dipertemuan kali ini saya akan memperkenalkan kalian tentang EBImage. 
+![](https://th.bing.com/th/id/Re05d027e54c4292fa0b3b5ecf7042784?rik=QrGqDLS5AOZ7aA&riu=http%3a%2f%2fbiii.eu%2fsites%2fdefault%2ffiles%2f2018-05%2findexebimage.png&ehk=4dQSSNdx4LgxgP%2fODbQqUT6m6kWkHxgdtzYOcwpTzhY%3d&risl=&pid=ImgRaw)<br>
+Apa sih itu?
+EBImages ini merupakan salah satu sebuah packages yang digunakan untuk image procesing.Untuk mengetahuinya secara mendalam, yuk silahkan masuk ke pages Materi:)))

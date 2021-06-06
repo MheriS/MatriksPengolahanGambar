@@ -1,0 +1,12 @@
+name: "Websiteku"
+navbar:
+  title: "Matriks Pengolahan Gambar"
+  left:
+    - text: "Beranda"
+      href: Beranda.html
+    - text: "Materi"
+      href: Materi.html
+    - text: "Daftar Pustaka"
+      href: DaftarPustaka.html
+    - text: "Profile"
+      href: Profile.html

@@ -1,0 +1,133 @@
+---
+title: "Materi"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 3
+    theme: united
+    highlight: tango
+    number_sections: true
+---
+
+# Langkah pertama, kalian install package EBImage.
+
+```{r}
+#Install EBImage
+if (!requireNamespace("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+
+BiocManager::install("EBImage")
+```
+
+# Langkah kedua, mengatur arah lokasi file, panggil package, read image.
+
+```{r}
+#Read Image
+setwd("C:/Users/herib/OneDrive/Pictures")
+library(EBImage)
+Image <- readImage("C:/Users/herib/OneDrive/Pictures/g1527.png")
+Images <- readImage("C:/Users/herib/OneDrive/Pictures/ya1.png")
+```
+
+# Ketiga, membuat plot data
+
+```{r}
+#Plot Data
+hist(Image)
+hist(Images)
+```
+Nah setelah itu kalian dapat melakukan pengaturan kecerahan, penyesuaian kontras, koreksi gamma, memotong gambar, menggabungkan gambar, mengatur tegak miringnya gambar, mengatur warna, mengatur filter,dll.<br>
+Di pertemuan kali ini saya akan membahas seperti berikut ini.
+
+## Mengatur Kecerahan
+
+```{r}
+#Brightness
+Image1 <- Image + 0.2
+Image2 <- Image - 0.2
+par(mfrow= c(1,2))
+plot(Image1)
+plot(Image2)
+```
+
+## Penyesuaian Kontras
+
+```{r}
+#Adjusting Contrast
+a <- Image * 0.5
+b <- Image * 2
+par(mfrow= c(1,2))
+plot(a)
+plot(b)
+```
+
+## Koreksi Gamma
+
+```{r}
+#Gamma Correction
+hmm <- Image ^ 2
+hmmm <- Image ^ 0.7
+par(mfrow= c(1,2))
+plot(hmm)
+plot(hmmm)
+```
+
+## Pemotongan Gambar
+
+```{r}
+#Cropping
+crop <- Images[800:1000, 800:1100,]
+display(crop)
+```
+
+## Penggabungan Gambar
+
+```{r}
+#Combine
+com <- combine(Image,Images)
+display(com)
+```
+
+## Mengatur Tegak Miringnya Gambar
+
+```{r}
+#Spacial Tranformation
+Imagetr <- translate(rotate(Image, 45), c(50, 0))
+display(Imagetr)
+```
+
+## Mengatur Warna
+
+```{r}
+#Color Management
+colorMode(Image) <- Grayscale
+display(Image)
+print(Image)
+colorMode(Image) <- Color
+display(Image)
+```
+
+## Mengatur Filter
+
+```{r}
+#LowPass-Filtering
+flow <- makeBrush(21, shape = 'disc', step = FALSE)^2
+flow <- flow/sum(flow)
+Image.flow <- filter2(Image, flow)
+display(Image.flow)
+#HighPass-Filtering
+fHigh <- matrix(1, nc = 3, nr = 3)
+fHigh[2, 2]<- -5
+Image.fHigh <- filter2(Image, fHigh)
+display(Image.fHigh)
+#Noise Reduction
+Image <- readImage("C:/Users/herib/OneDrive/Pictures/g1527.png")
+medFltr <- medianFilter(Image, 1.1)
+display(medFltr)
+```
+
+Keterangan:<br>
+#LowPass-Filtering -> Digunakan untuk menge-blurkan gambar<br>
+#HighPass-Filtering -> Digunakan untuk memberi noise pada gambar<br>
+#Noise Reduction -> Digunakan untuk menghilangkan noise gambar

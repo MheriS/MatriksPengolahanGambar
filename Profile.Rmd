@@ -1,0 +1,20 @@
+---
+title: "Profile"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 3
+    theme: united
+    highlight: tango
+    number_sections: true
+---
+
+## Biodata Penulis<br>
+![](https://scontent.fsub2-2.fna.fbcdn.net/v/t1.6435-9/154976271_2989209311307333_249468697851760262_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=8bfeb9&_nc_eui2=AeGEE_I0BKT-2O6ODaHuaVOcdfz6g1xTCL91_PqDXFMIv9jjSnGdeoZRpSMTwYnE9Bm9vyhMyRDdCyIJjaKCHM7n&_nc_ohc=ZyZTTpFF2N4AX8HHKQs&tn=GiefRDv807vbrVS6&_nc_ht=scontent.fsub2-2.fna&oh=2b758661305e98dd555f11d1e7d61e46&oe=60E3D996){width=20%}<br>
+Nama: Moh. Heri Susanto<br>
+NIM: 200605110087<br>
+TTL: Sumenep, 21 Oktober 2000<br>
+<br>
+![](https://scontent.fsub2-2.fna.fbcdn.net/v/t1.6435-9/101692139_10216992420151979_6304736812904231421_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=09cbfe&_nc_eui2=AeFTefZkY6ouRv850b96FNZP_J9br-SWDTP8n1uv5JYNM_drLwq9LatkSOkytDlk3izkekcbSZbZFDUdPjEZT65l&_nc_ohc=i3e9RA3STOIAX_sTYxz&_nc_ht=scontent.fsub2-2.fna&oh=e1486387ceab082e157638019026b96e&oe=60E26550){width=20%}<br>
+Dosen Pengampu: Prof. Dr. Suhartono, M.Kom<br>

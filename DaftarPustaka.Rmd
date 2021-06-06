@@ -1,0 +1,15 @@
+---
+title: "Daftar Pustaka"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 2
+    theme: united
+    highlight: tango
+    number_sections: true
+---
+
+Sumber Referensi:<br>
+# https://thinkstudioo.blogspot.com/2018/03/analisis-image-menggunakan-ebimage-di-r_6.html<br>
+# https://thinkstudioo.blogspot.com/2018/03/analisis-image-menggunakan-ebimage-di-r.html
